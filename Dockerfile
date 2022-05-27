@@ -1,4 +1,4 @@
 FROM python:3-alpine
 RUN pip install flask
-COPY *.* /*.*
+COPY ["Scores.txt","*.py"]
 CMD ["python","MainGame.py"]
